@@ -60,7 +60,7 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 ## PROGRAM 
 
 ## UP COUNTER 
-
+```
 module uc(clk, A);
 input clk;
 output reg [2:0]A;
@@ -71,9 +71,9 @@ A[1]=(A[0])^A[1];
 A[0]=A[0]^1;
 end
 endmodule
-
+```
 ## DOWN COUNTER 
-
+```
 module dc(clk,A);
 input clk;
 output reg [2:0]A;
@@ -84,7 +84,7 @@ A[1]=(~A[0])^A[1];
 A[0]=1^A[0];
 end
 endmodule
-
+```
 
 ## RTL LOGIC UP COUNTER AND DOWN COUNTER  
 
