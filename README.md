@@ -60,63 +60,43 @@ This type of counter is normally referred to as a Down Counter, (CTD). In a bina
 ## PROGRAM 
 
 ## UP COUNTER 
-```
-module uc(clk, A);
-input clk;
-output reg [2:0]A;
-always @(posedge clk)
-begin
-A[2]=(((A[0])&(A[1]))^A[2]);
-A[1]=(A[0])^A[1];
-A[0]=A[0]^1;
-end
-endmodule
-```
+![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/f3bd9e8a-3aef-4c77-8688-25ae58683cdf)
+
 ## DOWN COUNTER 
-```
-module dc(clk,A);
-input clk;
-output reg [2:0]A;
-always @(posedge clk)
-begin
-A[2]=(((~A[0])&(~A[1]))^A[2]);
-A[1]=(~A[0])^A[1];
-A[0]=1^A[0];
-end
-endmodule
-```
+![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/c9312eff-6752-48ba-8dd0-501211682e08)
+
 
 ## RTL LOGIC UP COUNTER AND DOWN COUNTER  
 
 ## UP COUNTER
+![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/fc59ef2d-6945-4e83-82c4-9fcc91503c2c)
 
-![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/fb730254-fe55-4f56-81f4-20714cf68966)
 
 ## DOWN COUNTER
+![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/f2080a4a-2293-46f9-a5e6-cedd5776ea3d)
 
-![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/5ccaf959-db67-4596-94d5-92ca0391ea8f)
 
 
 
 ## TIMING DIGRAMS FOR COUNTER  
 
 ## UP COUNTER
+![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/57a20d5b-41fd-4aae-9d11-3790d834a5ef)
 
-![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/1efc27b3-cf16-48d1-8390-b4b7ae1b1980)
 
 ## DOWN COUNTER
+![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/4c95c28a-74eb-4d40-b32c-83782a6cc6d5)
 
-![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/9ea1fbf8-178e-4d53-b2c3-3a98d7908ac8)
 
-## TRUTH TABLE 
+## STATE TABLE 
 
 ## UP COUNTER
+![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/eff116b4-f139-479b-95df-834c497e42c4)
 
-![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/3402983b-a3fa-472a-87aa-9c75e722677b)
 
 ## DOWN COUNTER
+![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/3593ab95-26e4-47e8-9eb6-39eec56bed42)
 
-![image](https://github.com/KAMALESHNITHYA/Exp-7-Synchornous-counters-/assets/145743119/0ed2cdb8-d0cd-4452-bac2-ad7149e7294f)
 
 ## RESULTS 
 Thus we have verified the truthtable of 4-bit up and down counter using verilog.
